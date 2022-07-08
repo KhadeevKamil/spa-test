@@ -18,8 +18,8 @@ const NavigationBar = () => {
         <div className={classes.wrapper}> 
             <nav
                 style={{
-                borderBottom: "solid 1px",
-                paddingBottom: "1rem",
+                    borderBottom: "solid 1px",
+                    paddingBottom: "1rem",
                 }}
             >
                 <Link to="/list_of_posts">Posts list</Link> |{" "}

@@ -9,10 +9,11 @@ const NewPost = () => {
 
     const onCreate = () => {
         axios.post("http://localhost:4000/posts", {
-            title, body,
-            "author": "Leissan",
+            "title": title, 
+            "body": body,
+            "author": author,
             "createdAt": new Date()
-          }).finally(() => {
+          }).then(() => {
             setTitle(null)
             setAuthor(null)
             setBody(null)
